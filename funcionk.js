@@ -5,3 +5,16 @@ function transformNumber(n) {
     return n * 2;
   }
 }
+
+
+function count_zero(binaryString) {
+  let count = 0;
+
+  for (let i = 0; i < binaryString.length; i++) {
+    if (binaryString[i] === '0') {
+      count++;
+    }
+  }
+
+  return count;
+}
